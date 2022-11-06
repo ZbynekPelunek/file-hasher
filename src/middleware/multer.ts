@@ -2,7 +2,7 @@ import { NextFunction } from 'express';
 import multer from 'multer';
 
 export function uploadFile(req: any, res: any, next: NextFunction) {
-  const upload = multer({ dest: 'uploads/' }).single('file');
+  const upload = multer().single('file');
 
   upload(req, res, (err) => {
     if (err instanceof multer.MulterError) {

@@ -2,6 +2,8 @@
 
 Task to make an API that takes file sent in a body and returns its SHA1 hashed data and the file size, it also saves the same data to database. The sent file is not saved anywhere.
 
+**IMPORTANT**: This version is not finished as uploading large files (1GB +) uses too much memory.
+
 On **POST** /'api/v1/files/upload' it accepts 1 parameter:
 
 - **file** (required) | Can contain any file, extension or size doesn't matter.
@@ -59,4 +61,4 @@ Using Postman or similar software, you can now access File-Hasher API on localho
 
 ## Status
 
-Task is: _complete_
+Task is: _incomplete_
